@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>----ALGORITMOS TAREA----</p>
+        <p>1.- Algoritmo para verificar si una persona es de la tercera edad</p>
+        <button onclick="terceraEdad()">Verificar</button>
+        <p>1.- Algoritmo para verificar si un numero tiene vocales</p>
+        <button onclick="nomVocales()">Verificar</button>
+        <br><br><br><br>
+
+
+    <script>
+        function terceraEdad(){
+            var edad=80
+            if(edad>=60){
+                alert("La persona es de la tercera edad")
+            } else{
+                alert("La persona no es de la tercera edad")
+            }
+
+        }
+        function nomVocales(){
+            var nombre= 'antonio'
+            let contVocales=0
+            for (let i=0; i<nombre.length; i++){
+                let letra = nombre.charAt(i);
+                if (letra==="a"|| letra==="e"||letra==="i"|| letra==="o"||letra==="u"||letra==="A"|| letra==="E"||letra==="I"|| letra==="O"||letra==="U")
+                contVocales=contVocales+1;
+            }
+            alert("La palabra tiene "+contVocales+" Vocales")
+
+        }
+
+    </script>
+    
+</body>
+</html>
